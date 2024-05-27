@@ -369,6 +369,52 @@ img {
 }
 /* All update takes from "Info after About Studio" */
 
+/* ---------Modal Window -------*/
+
+.modal-overlay {
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal {
+  max-width: 408px;
+  height: 584px;
+  background-color: #fcfcfc;
+}
+.modal-form {
+}
+.modal-close-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #e7e9fc;
+  border: #2e2f42;
+}
+.modal-close-btn-fill {
+  fill: #2e2f42;
+}
+.modal-form-title {
+}
+.modal-form-subtitle {
+}
+.modal-confirm-btn {
+}
 /*------------ Footer---------- */
 
 .logo-footer {
