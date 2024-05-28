@@ -358,41 +358,33 @@
     </main>
     <div class="modal-overlay">
       <div class="modal">
-      <form class="modal-form">
-        <button class="modal-close-btn" type="submit"><svg class="modal-close-btn-fill" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg></button>
-        <legend class="modal-form-title">Leave your contacts and we will call you back</legend>
-        <label class="modal-form-subtitle">
-          <input type="text">
-            <svg>
-              <use></use>
-            </svg>
-          </input>
-        </label>
-        <label class="modal-form-subtitle">
-          <input type="text">
-            <svg>
-              <use></use>
-            </svg>
-          </input>
-        </label>
-        <label class="modal-form-subtitle">
-          <input type="text">
-            <svg>
-              <use></use>
-            </svg>
-          </input>
-        </label>
-        <label class="modal-form-subtitle">
-          <input type="text">
-            <svg>
-              <use></use>
-            </svg>
-          </input>
-        </label>
-        <button class="modal-confirm-btn"></button>
-      </form>
+        <form class="modal-form-table">
+          <div class="modal-close-btn">
+            <button type="submit" class="modal-form-close-btn">
+              <svg width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <legend class="modal-form-title">Leave your contacts and we will call you back</legend>
+          <label class="modal-form-subtitle modal-form-label"
+            >Name <input type="text" name="user_name"
+          /></label>
+          <label class="modal-form-subtitle modal-form-label"
+            >Phone <input type="tel" name="user_phone"
+          /></label>
+          <label class="modal-form-subtitle modal-form-label"
+            >Email <input type="email" name="user_email"
+          /></label>
+          <label class="modal-form-subtitle form-comment-label"
+            >Comment <input name="user_comment" placeholder="Text input" />
+          </label>
+          <label class="modal-form-subtitle modal-form-checkbox"
+            ><input type="checkbox" name="user_agreemant" />I accept the terms and conditions of the
+            <span class="modal-privacy-policy">Privacy Policy</span></label
+          >
+          <button class="modal-form-submit-btn">Send</button>
+        </form>
       </div>
     </div>
     <!--Footer-->

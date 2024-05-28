@@ -393,29 +393,94 @@ img {
   pointer-events: auto;
 }
 .modal {
-  max-width: 408px;
+  width: 408px;
   height: 584px;
   background-color: #fcfcfc;
 }
-.modal-form {
+.modal-form-table {
+  display: flex;
+  flex-direction: column;
 }
-.modal-close-btn {
+.modal-form-close-btn {
+  border-radius: 50%;
   width: 24px;
   height: 24px;
-  border-radius: 100%;
   background-color: #e7e9fc;
-  border: #2e2f42;
+  border: none;
 }
-.modal-close-btn-fill {
-  fill: #2e2f42;
+.modal-close-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 24px 30px;
 }
 .modal-form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
 }
 .modal-form-subtitle {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
-.modal-confirm-btn {
+.modal-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: auto;
+  margin-bottom: 8px;
 }
-/*------------ Footer---------- */
+.modal-form-label input {
+  width: 360px;
+  height: 40px;
+}
+.form-comment-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+.form-comment-label input {
+  width: 360px;
+  height: 120px;
+}
+.form-comment-label input::placeholder {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-checkbox {
+  display: flex;
+  margin: auto;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+.modal-privacy-policy {
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+.modal-form-submit-btn {
+  width: 169px;
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  margin: auto;
+}
+/* ---- Footer---------- */
 
 .logo-footer {
   font-family: 'Raleway', sans-serif;
