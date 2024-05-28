@@ -438,6 +438,8 @@ img {
 .modal-form-label input {
   width: 360px;
   height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
 }
 .form-comment-label {
   display: flex;
@@ -446,15 +448,18 @@ img {
   margin: auto;
   margin-bottom: 16px;
 }
-.form-comment-label input {
+.modal-comment-input {
   width: 360px;
   height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
 }
-.form-comment-label input::placeholder {
+.modal-comment-input::placeholder {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  padding-left: 16px;
 }
 .modal-form-checkbox {
   display: flex;
