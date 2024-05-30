@@ -525,11 +525,10 @@ input:focus + svg {
 }
 .checkbox-container {
   position: relative;
-  box-sizing: border-box;
-}
-.box-agree {
   width: 16px;
   height: 16px;
+}
+.box-agree {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   display: flex;
@@ -538,7 +537,13 @@ input:focus + svg {
 }
 .agree-icon {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   fill: #2e2f42;
+}
+.box-agree input[type='checkbox']:checked + .agree-icon {
+  display: block;
 }
 .modal-privacy-policy {
   color: #4d5ae5;
