@@ -425,7 +425,10 @@ img {
 .modal-form-close-btn:focus {
   background-color: #4d5ae5;
 }
-.close-icon-btn:hover {
+.modal-form-close-btn:hover .close-icon-btn {
+  fill: #fff;
+}
+.modal-close-btn .modal-form-close-btn:focus .close-icon-btn {
   fill: #fff;
 }
 .modal-form-title {
